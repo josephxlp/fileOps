@@ -150,11 +150,16 @@ level = 2
 
 
 drive_names = ["drivea","driveb",None]
+
 local_trash = "/home/ljp238/.local/share/Trash"
+from upaths import name
+trash_12tdx = "/media/ljp238/12TDX/.Trash-1001"
+trash_12tbwolf = f"/media/{name}/12TBWolf/.Trash-1001" # is there a .Trans-1001 as well?
 
 if __name__ == "__main__":
-    from upaths import name
-    external1_trash = f"/media/{name}/12TBWolf/.Trash-1001" # is there a .Trans-1001 as well?
+    
     clean_trash(local_trash,level=level, verbose=True)
-    clean_trash(external1_trash,level=level, verbose=True)
+    clean_trash(trash_12tdx,level=level, verbose=True)
+    clean_trash(trash_12tbwolf,level=level, verbose=True)
+
  

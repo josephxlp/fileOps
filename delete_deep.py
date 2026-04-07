@@ -9,5 +9,6 @@ if __name__ == "__main__":
     folder_to_clean = source = "/media/ljp238/12TBWolf/SPPHDU3/"
     folder_to_clean = "/media/ljp238/12TBWolf/ARXIV2/TILESV2/genRON/clips     "
     folder_to_clean = "/media/ljp238/12TDX/ARXIV/MtreesV2/geojson/metadata"
+    folder_to_clean = "/media/ljp238/12TBWolf/ARXIV1/SENTINEL1_DRFA_GEE/S1/"
     delete_folder_contents(folder_to_clean, verbose=True)
     send_notification()
